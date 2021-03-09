@@ -1,0 +1,130 @@
+.project {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Image */
+.project img {
+    height: 175px;
+    width: 320px;
+    object-fit: contain;
+    /* margin-top: 5px; */
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.project img:hover {
+    transform: scale(1.04);
+}
+
+/* Description */
+.project__description {
+    padding-left: 30px;
+}
+
+/* Description Title */
+.project__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project__title > h2 {
+    text-transform: uppercase;
+    color: var(--navy);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/* Icons */
+.project__descriptionIcons {
+    display: flex;
+    align-items: center;
+}
+
+.project__descriptionIcon  {
+    margin-right: 10px;
+    color: var(--navy);
+    transform: all 200ms ease-in;
+}
+
+.project__descriptionIcon:hover {
+    color: var(--violet);
+}
+
+/* Paragraph */
+.project__description > p {
+    margin-top: 10px;
+    color: var(--navy);
+}
+
+/* Description Technologies */
+.project__technologiesContainer {
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.project__technologiesContainer > h4 {
+    margin-right: 7px;
+    padding-top: 10px;
+    color: var(--violet);
+}
+
+.project__technologies {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media(max-width: 800px) {
+    .project img {
+        height: 120px;
+        width: 220px;
+    }
+
+    .project img:hover {
+        transform: scale(1.03);
+    }
+
+    .project__technologiesContainer {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 700px) {
+    .project {
+        flex-direction: column;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--grey);
+    }
+
+    .project__description {
+        margin-top: 10px;
+        padding-left: 0px;
+    }
+
+    .project img {
+        height: 175px;
+        width: 320px;
+    }
+}
+
+@media(max-width: 500px) {
+    .project__title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project__title > h2 {
+        margin-bottom: 8px;
+    }
+}
+
+@media(max-width: 370px) {
+    .project img {
+        width: 100%;
+    }
+}

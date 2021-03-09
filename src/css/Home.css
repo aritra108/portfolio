@@ -1,0 +1,60 @@
+.home {
+    position: relative;
+    height: 100vh;
+}
+
+.home__overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+}
+
+.home__description {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-20%);
+    color: white;
+    z-index: 1;
+}
+
+.home__description > h1 {
+    font-size: 40px;
+    line-height: 1.7;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.home__description > h2 {
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.home__description > h3 {
+    font-size: 25px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+.home__description > a {
+    display: block;
+    width: fit-content;
+    margin-top: 20px;
+    padding: 8px 12px;
+    background-color: transparent;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    transition: all 200ms ease-in;
+}
+
+.home__description > a:hover {
+    background-color: white;
+    border: 1px solid var(--navy);
+    color: var(--navy);
+}

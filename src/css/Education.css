@@ -1,0 +1,104 @@
+.education {
+    padding: 50px 20px;
+}
+
+/* Box Container */
+.education__box {
+    width: fit-content;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/* Box Description */
+.education__boxDescription {
+    margin-right: 30px;
+    color: var(--green);
+}
+
+.education__boxDescription > h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.education__boxDescription > ul {
+    list-style: none;
+    margin-top: 15px;
+    color: var(--navy);
+    font-size: var(--primary-font-size);
+}
+
+.education__boxDescription > ul > li {
+    display: flex;
+    align-items: center;
+    line-height: 1.8;
+}
+
+.education__icon {
+    height: 23px !important;
+    width: 23px !important;
+    margin-right: 7px;
+}
+
+.education__noIcon {
+    margin-left: 30px;
+}
+
+/* Image */
+.education__boxImage {
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+}
+
+/* Graduation Box */
+.education__graduationDescription {
+    margin-right: 0px;
+    margin-left: 30px;
+}
+
+@media (max-width: 700px) {
+    .education__box {
+        flex-direction: column-reverse;
+    }
+
+    .education__graduation {
+        flex-direction: column;
+    }
+
+    .education__graduationDescription {
+        margin-left: 0px;
+    }
+
+    .education__boxDescription {
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+
+    .education__boxDescription > ul {
+        margin-top: 10px;
+    }
+    
+    .education__boxDescription > ul > li {
+        line-height: 1.9;
+    }
+
+    .education__icon {
+        height: 23px !important;
+        width: 23px !important;
+        margin-right: 12px;
+    }
+    
+    .education__noIcon {
+        margin-left: 35px;
+    }
+}
+
+@media (max-width: 450px) {
+    .education__boxImage {
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+    }
+}

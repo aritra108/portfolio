@@ -1,0 +1,28 @@
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--grey);
+}
+
+.skill > img {
+    height: 40px;
+    width: 60px;
+    object-fit: contain;
+}
+
+.skill > p {
+    margin-left: 5px;
+    font-size: var(--primary-font-size);
+}
+
+.skill > .MuiLinearProgress-root {
+    max-width: 300px;
+    flex: 1;
+    margin-left: 8px;
+}
+
+.skill > small {
+    margin-left: 5px;
+    font-size: 14px;
+}

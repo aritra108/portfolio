@@ -1,0 +1,24 @@
+.projects {
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.projects__container {
+    margin-top: 50px;
+}
+
+/* More Projects Link */
+.projects__moreLink {
+    margin-top: 30px;
+    text-align: center;
+    color: var(--navy);
+}
+
+.projects__moreLink > a {
+    color: var(--green);
+    transition: all 200ms ease-in;
+} 
+
+.projects__moreLink > a:hover {
+    text-decoration: underline;
+}

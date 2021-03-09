@@ -1,0 +1,54 @@
+.contact {
+    padding: 50px 20px;
+    background-color: var(--green);
+}
+
+.contact__container {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;    
+}
+
+.contact__row {
+    padding: 10px 0;
+    display: flex;
+    font-size: var(--primary-font-size);
+    border-bottom: 1px solid var(--navy);
+    color: var(--navy);
+}
+
+.contact__row:last-child {
+    border-bottom: none;
+}
+
+.contact__row > *:first-child {
+    flex: 0.4;
+    padding-left: 20px;
+    display: flex;
+}
+
+.contact__row > *:last-child {
+    flex: 0.6;
+    padding-left: 20px;
+}
+
+.contact__social > * {
+    margin-right: 10px;
+    transition: all 200ms ease-in;
+}
+
+.contact__social > *:hover {
+    color: var(--violet);
+}
+
+@media (max-width: 450px) {
+    .contact__row > *:first-child {
+        flex: 0.4;
+        padding-left: 0px;
+    }
+    
+    .contact__row > *:last-child {
+        flex: 0.6;
+        padding-left: 10px;
+    }
+}

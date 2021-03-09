@@ -1,0 +1,46 @@
+.heading {
+    margin: 0px auto;
+    width: fit-content;
+    background-color: inherit;
+}
+
+.heading > h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.heading__divider {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading__divider > p {
+    margin: 0 10px;
+    line-height: 0;
+}
+
+.heading__line {
+    height: 1px;
+    width: 150px;
+    background-color: black;
+}
+
+@media(max-width: 400px) {
+    .heading {
+        width: 100%;
+    }
+
+    .heading__line {
+        width: 100%;
+    }
+}
+
+@media(max-width: 330px) {
+    .heading > h1 {
+        font-size: 28px;
+    }
+}
