@@ -1,3 +1,16 @@
+# About the Project
+You can find the deployed version [here](https://portfolio-ac39e.web.app/)
+
+## Description
+This is a simple portfolio in order to showcase my skills and work relevant for a computer science undergraduate. The project is build primarily using ReactJS. The design is completely custom built using HTML and CSS. I have used Material-UI for the icons and my avatar. I have also taken the help of the AOS library for including animations. The website is hosted on Firebase. However, the information here is hard-coded and it is a static website.
+
+## Technologies Used:
+1. HTML
+2. CSS, Media Queries and Material-UI
+3. ReactJS 
+4. AOS (Animation on Scroll)
+5. Firebase Hosting 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
